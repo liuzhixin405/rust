@@ -17,3 +17,13 @@ level VARCHAR(30));
 
   insert into course(id,teacher_id,name,time)
  VALUES(2,1, 'Second course','2023-01-04 08:10:00');
+
+
+ drop Table if EXISTS teacher;
+ 
+ create table teacher(
+    id serial primary key,
+    name varchar(100),
+    picture_url varchar(200),
+    profile VARCHAR(2000)
+ );
