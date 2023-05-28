@@ -1,0 +1,1 @@
+select id, teacher_id, name, time from course where id = $1
